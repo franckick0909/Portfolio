@@ -57,51 +57,6 @@ Mode.onclick = function(){
 }
 
 
-//  SEND MAIL                 Pas ok
-
-function validate() {
-    let name = document.querySelector('.name')
-    let email = document.querySelector('.email')
-    let msg = document.querySelector('.message')
-    let sendBtn = document.querySelector('.send-btn')
-
-    sendBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (name.value == "" || email.value == "" || msg == "") {
-            emptyerror();
-        }else{
-            sendmail (name.value, email.value, msg.value);
-            success();
-        }
-    });
-}
-
-validate();
-
-function sendmail(name,email,msg){
-    emailjs.send("service_snaav6f", "template_l8qdthm", {
-        from_name: email,
-        to_name: name,
-        message: msg,
-        });
-}
-
-function emptyerror() {
-swal({
-    title: "Oh No....",
-    text: "Remplissez tous les champs!",
-    icon: "error",
-  });
-}
-
-function success() {
-swal({
-    title: "Email envoyé avec succes!",
-    text: "Je réponds sous 48h",
-    icon: "success",
-    });
-}
-
 
 // ACTIVE LINK  OK!!!
 
