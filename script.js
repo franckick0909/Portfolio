@@ -138,9 +138,9 @@ ScrollReveal().reveal(".show-once", {             //  fade-in
 ScrollReveal().reveal(".title", {               //  fade-in
   duration: 500,
   origin: "top",
-  distance: "200px",
+  distance: "100px",
   easing: "cubic-bezier(.37,.01,.74,1)",
-  interval: 300,
+  interval: 200,
   opacity: 0,
   rotate: {
     x: 20,
@@ -157,7 +157,7 @@ ScrollReveal().reveal(".fade-in", {             //  fade-in
 ScrollReveal().reveal(".scaleUp", {              //  scaleUp
   duration: 2000,
   interval: 200,
-  scale: 0.65
+  scale: 0.85
 });
 
 ScrollReveal().reveal(".flip", {                 //  flip
@@ -173,11 +173,11 @@ ScrollReveal().reveal(".flip", {                 //  flip
 // EDUCATION
 
 ScrollReveal().reveal(".card", {  
-  delay: 100,             //  fade-in
+  delay: 0,             //  fade-in
   duration: 400,
-  distance: "100px",
+  distance: "150px",
   easing: "cubic-bezier(.37,.01,.74,1)",
-  interval: 100,
+  interval: 200,
   opacity: 0,
   scale: 1.2
 });
@@ -188,7 +188,7 @@ ScrollReveal().reveal(".slide-right", {            //  slide-right
   duration: 500,
   interval: 200,
   origin: "left",
-  distance: "200px",
+  distance: "100px",
   opacity: 0,
   easing: "cubic-bezier(.37,.01,.74,1)",
 });
@@ -196,7 +196,7 @@ ScrollReveal().reveal(".slide-right", {            //  slide-right
 ScrollReveal().reveal(".slide-left", {             //  slide-left
     duration: 500,
     origin: "right",
-    distance: "200px",
+    distance: "100px",
     opacity: 0,
     easing: "cubic-bezier(.37,.01,.74,1)",
 });
@@ -205,7 +205,7 @@ ScrollReveal().reveal(".slide-down", {             //  slide-down
   duration: 500,
   interval: 200,
   origin: "top",
-  distance: "200px",
+  distance: "100px",
   easing: "cubic-bezier(.37,.01,.74,1)",
   opacity: 0,
 });

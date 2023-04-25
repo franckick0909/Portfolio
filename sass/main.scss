@@ -29,10 +29,10 @@
 html{
     overflow-x: hidden;
 }
-
+/*
 html.sr .load-hidden .card .slide-right .slide-left .slide-down .slide-up .title{
-    visibility: collapse;
-}
+    visibility: hidden;
+}*/
 
 html::-webkit-scrollbar{
     width: 1rem;
@@ -52,18 +52,18 @@ html::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
     background-color: var(--font-color3);
-    width: 30px;
-    height: 30px;
+    width: 2.7rem;
+    height: 2.7rem;
     text-align: center;
     border-radius: 4px;
     position: fixed;
-    bottom: 30px;
-    right: 0;
+    bottom: 3rem;
+    right: 3rem;
     transition: background-color .3s, 
-      opacity .5s, visibility .5s;
+    opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
-    z-index: 1000;
+    z-index: 999999999;
     box-shadow: 3px 5px rgba(0, 0, 0, 0.1);
     & .fa-angle-up{
         font-size: 24px;
@@ -98,11 +98,7 @@ html::-webkit-scrollbar-thumb{
     visibility: visible;
 }
 
-@media (min-width: 500px){
-    #button{
-      margin: 30px;
-    }
-}
+
 
 
 /*      --bg-color3: #000;
@@ -191,11 +187,6 @@ palette top
     --font-color6: #95818D;  */
 
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
     -o-transition: background color 1s;
     -webkit-transition: background color 1s;
     -moz-transition: background color 1s;
@@ -243,7 +234,8 @@ body{
 }
 
 .home .home__container .btn{
-    animation: slide-btn 1s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: slide-btn 1s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    -webkit-animation: slide-btn 1s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
     opacity: 0;
 }
 
@@ -558,8 +550,6 @@ header .lecteur-audio{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 4rem;
     opacity: 0;
     animation: slide-nav 0.5s 1.6s  cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
     -webkit-animation: slide-nav 0.5s 1.6s  cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
@@ -674,8 +664,8 @@ header nav ul li .active i{
 
 #MenuBtn{
     position: fixed;
-    top: 25px;
-    right: 25px;
+    top: 2rem;
+    right: 3rem;
     font-size: $h3-font-size;
     width: 2.7rem;
     color: var(--font-color6);
@@ -689,7 +679,7 @@ header nav ul li .active i{
     border-radius: 50%;
     box-shadow: $box-shadow2;
     display: none;
-    z-index: 999;
+    z-index: 99999999;
     -o-transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -700,8 +690,6 @@ header nav ul li .active i{
     &:hover{
         color: var(--font-color1);
         background: var(--font-color3);
-
-
     }
 }
 
@@ -712,7 +700,7 @@ header nav ul li .active i{
         display: block;
     }
     header{
-        left: -18.75rem;
+        left: -300px;
     }
 }
 
@@ -771,6 +759,17 @@ main{
     margin: 0.1rem;
     font-family: $raleway;
     margin-left: 12rem;
+}
+
+@media (max-width: 800px){
+    .drop-main1{
+        margin-left: 0rem;
+        font-size: 2rem;
+    }
+    .drop-main2{
+        margin-left: 0;
+        font-size: 3rem;
+    }             
 }
 
 .f{
@@ -1145,6 +1144,8 @@ main{
     }
 }
 
+/*     ------ TEXT TYPING START   -------     */
+
 .text-typing{
     display: flex;
     text-align: start;
@@ -1207,7 +1208,25 @@ main{
     }
 }
 
+@media only screen and (max-width: 800px){
+    .text-typing{
+        display: grid;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+    }
+    .second-text li{
+        position: relative;
+        top: 0;
+        font-size: $h3-font-size;
+        padding: 0;
+    }
+    .text-typing .first-text{
+        font-size: $h3-font-size;
+    }
 
+}
+
+/*     ------ TEXT TYPING END   -------     */
 
 
 .home__social{
@@ -2058,11 +2077,29 @@ transform: translateY(0px);
 
 footer{
     background: var(--font-color2);
-    padding: 1rem 1rem 1rem 316px;
+    /*padding: 1rem 1rem 1rem 316px;*/
     width: 100%;
+    padding: 1rem;
 
 }
 
+footer .footer-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: space-between;
+    & .logo h1{
+        color: var(--font-color5);
+        & span{
+            color: var(--font-color3);
+        }
+    }
+}
+
+
+
+/*
 footer .footer-content{
     padding: 2rem;
     display: flex;
@@ -2074,6 +2111,12 @@ footer .footer-content{
             color: var(--font-color3);
         }
     }
+}*/
+
+footer .footer-content .nav-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2rem;
 }
 
 footer .footer-content .nav-footer ul li a{
@@ -2139,6 +2182,34 @@ section{
 
 @media only screen and (max-width: 1050px){
     footer{
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    footer .footer-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-content: center;
+    }
+    footer .footer-content .nav-footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    footer .footer-content .footer-social{
+        padding-bottom: rem;
+    }
+    footer .copyright{
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 700px){
+    html.sr, .load-hidden, .card, .slide-right, .slide-left, .slide-down, .slide-up, .title{
+        visibility: visible;
+        opacity: 1;
     }
 }
