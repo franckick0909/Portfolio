@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="sr">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +28,9 @@
 </head>
 <body>
 
+            <!-- Back to top button -->
 
+            <a id="button"><i class="fa-solid fa-angle-up"></i></a>
     
     <header>
 
@@ -39,24 +41,6 @@
             <label id="inner-text">Dark</label>
         </div>
 
-
-
-        
-
-        <div class="lecteur-audio">
-            <figure>
-
-                <figcaption>The Weeknd</figcaption>
-
-
-                <audio style="width: 12rem; padding: 0.5rem 0;" controls preload="metadata">
-
-                    <source src="musique/The Weeknd - Creepin.mp3" type="audio/mp3">
-                    <source src="musique/The Weeknd - Nothing Is Lost.mp3" type="audio/mp3">
-
-                </audio>
-            </figure>
-        </div>
 
         <!--===  NAVBAR  ===-->
 
@@ -74,76 +58,58 @@
 
     <!--===   SECTION MAIN BODY  ===-->
 
+    <!-- ===== HOME Section START =====-->
 
-    <main>
+        <section class="home" id="home">
+            <div class="content">
 
-            <!-- Back to top button -->
+                <!-- button menu right -->
 
-    <a id="button"><i class="fa-solid fa-angle-up"></i></a>
-
-
-
-            <!--===  HOME SECTION START  ===-->
-
-            <section class="home" id="home">
-
-
-                    <!-- button menu right -->
-
-    <i class="fa-solid fa-bars" id="MenuBtn"></i>
+                <i class="fa-solid fa-bars" id="MenuBtn"></i>
                 
-
-                <div class="home__container bd-grid">
-
-                        <div class="home-img flip">
-                            <img src="images/IMG_20200722_175641-removebg-preview.png" alt="Ma photo">
-                            <span class="circle-spin"></span>
-                        </div>
-
-
-                        <div class="wrapper ">
-                            <div class="drop-main1 scaleUp">
-                                <div class="f">F</div>
-                                <div class="r">R</div>
-                                <div class="a">A</div>
-                                <div class="n">N</div>
-                                <div class="c">C</div>
-                                <div class="k">K</div>
-                            </div>
-                            <div class="drop-main2 scaleUp">
-                                <div class="a1">C</div>
-                                <div class="a2">H</div>
-                                <div class="a3">A</div>
-                                <div class="a4">P</div>
-                                <div class="a5">E</div>
-                                <div class="a6">L</div>
-                                <div class="a7">O</div>
-                                <div class="a8">N</div>
-                            </div>
-                        </div>
-
-
-                        <div class="text-typing fade-in">
-                            <span class="first-text">Je suis</span>
-                            <ul class="second-text">
-                                <li><span>Développeur</span></li>
-                                <li><span>Front-end</span></li>
-                                <li><span>En Freelance</span></li>
-                            </ul>
-                        </div>
-
-    
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/franck-chapelon/" target="_blank" class="home__social-link card"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="https://github.com/franckick0909" target="_blank" class="home__social-link card"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.facebook.com/franckick.chapelon/" target="_blank" class="home__social-link card"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://dribbble.com/Franckick" target="_blank" class="home__social-link card"><i class="fa-brands fa-dribbble"></i></a>
-                        </div>
-    
-                        <a href="https://franckick0909.github.io/CV/" target="_blank" class="btn1 btn scaleUp">Téléchargez CV<i class="fa-solid fa-download"></i></a>
-
+                <div class="home-img flip">
+                    <img src="images/IMG_20200722_175641-removebg-preview.png" alt="Ma photo">
+                    <span class="circle-spin"></span>
                 </div>
-            </section>
+
+
+                <div class="wrapper ">
+                    <div class="drop-main1 scaleUp">
+                        <div class="f">F</div>
+                        <div class="r">R</div>
+                        <div class="a">A</div>
+                        <div class="n">N</div>
+                        <div class="c">C</div>
+                        <div class="k">K</div>
+                    </div>
+                    <div class="drop-main2 scaleUp">
+                        <div class="a1">C</div>
+                        <div class="a2">H</div>
+                        <div class="a3">A</div>
+                        <div class="a4">P</div>
+                        <div class="a5">E</div>
+                        <div class="a6">L</div>
+                        <div class="a7">O</div>
+                        <div class="a8">N</div>
+                    </div>
+                </div>
+
+
+                <h2 class="info">Je suis <span class="typing"></span></h2>
+
+    
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/franck-chapelon/" target="_blank" class="home__social-link card"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/franckick0909" target="_blank" class="home__social-link card"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/franckick.chapelon/" target="_blank" class="home__social-link card"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://dribbble.com/Franckick" target="_blank" class="home__social-link card"><i class="fa-brands fa-dribbble"></i></a>
+                </div>
+    
+                <a href="https://franckick0909.github.io/CV/" target="_blank" class="btn1 btn scaleUp">Téléchargez CV<i class="fa-solid fa-download"></i></a>
+            </div>
+
+                
+        </section>
 
 
             <!--===  HOME SECTION END  ===-->
@@ -154,17 +120,17 @@
 
 
         <section class="about" id="about">
+
             <div class="heading" data-aos="fade-up">
                 <h2>à propos <span> de moi</span></h2>
             </div>
+            
+            
 
-                <div class="info-title slide-right">
-                    <h2>Infos Personnelles</h2>
-                </div>
+            <div class="row-1">         
 
-            <div class="about-container">                
+                <div class="info">               
 
-                <div class="info">
                     <div class="about-perso fade-in">
                         <h3>nom : <span> Chapelon</span> </h3>
                         <h3>age : <span> 47</span> </h3>
@@ -209,62 +175,65 @@
                 </div>
             </div>
 
-            <div class="info-title slide-left">
+
+            <div class="info-title slide-right">
                 <h2>Compétences</h2>
             </div>
+             
 
         
-    <div class="containeur-skills">
-        <div class="wrapper-skill">
-            <div class="card html">
-                <div class="circle">
-                    <div class="bar"></div>
-                    <div class="boxx"><span></span></div>
-                </div>
-                <div class="text">HTML5</div>
-            </div>
+            <div class="row-2">
+                <div class="wrapper-skill">
 
-            <div class="card css">
-                <div class="circle">
-                    <div class="bar"></div>
-                    <div class="boxx"><span></span></div>
-                </div>
-                <div class="text">CSS3</div>
-            </div>
+                    <div class="card html">
+                        <div class="circle">
+                            <div class="bar"></div>
+                            <div class="boxx"><span></span></div>
+                        </div>
+                        <div class="text">HTML5</div>
+                    </div>
 
-            <div class="card js">
-                <div class="circle">
-                    <div class="bar"></div>
-                    <div class="boxx"><span></span></div>
-                </div>
-                <div class="text">JavaScript</div>
-            </div>
+                    <div class="card css">
+                        <div class="circle">
+                            <div class="bar"></div>
+                            <div class="boxx"><span></span></div>
+                        </div>
+                        <div class="text">CSS3</div>
+                    </div>
 
-            <div class="card sass">
-                <div class="circle">
-                    <div class="bar"></div>
-                    <div class="boxx"><span></span></div>
-                </div>
-                <div class="text">SASS</div>
-            </div>
+                    <div class="card js">
+                        <div class="circle">
+                            <div class="bar"></div>
+                            <div class="boxx"><span></span></div>
+                        </div>
+                        <div class="text">JavaScript</div>
+                    </div>
 
-            <div class="card git">
-                <div class="circle">
-                    <div class="bar"></div>
-                    <div class="boxx"><span></span></div>
-                </div>
-                <div class="text">Git & Github</div>
-            </div>
+                    <div class="card sass">
+                        <div class="circle">
+                            <div class="bar"></div>
+                            <div class="boxx"><span></span></div>
+                        </div>
+                        <div class="text">SASS</div>
+                    </div>
 
-            <div class="card pc">
-                <div class="circle">
-                    <div class="bar"></div>
-                    <div class="boxx"><span></span></div>
+                    <div class="card git">
+                        <div class="circle">
+                            <div class="bar"></div>
+                            <div class="boxx"><span></span></div>
+                        </div>
+                        <div class="text">Git & Github</div>
+                    </div>
+
+                    <div class="card pc">
+                        <div class="circle">
+                            <div class="bar"></div>
+                            <div class="boxx"><span></span></div>
+                        </div>
+                        <div class="text">Montage PC</div>
+                    </div>
                 </div>
-                <div class="text">Montage PC</div>
             </div>
-        </div>
-    </div>
 
                     
             
@@ -281,15 +250,13 @@
                 <h2>mon <span> education </span></h2>
             </div>
 
-            <div class="container-grid">                
-
-                
+            <div class="row">          
 
                 <div class="box-container">
                     
-                <div class="info-title slide-right">
-                    <h2>éducation</h2>
-                </div>
+                    <div class="info-title slide-right">
+                        <h2>éducation</h2>
+                    </div>
 
                     <div class="box box-1 card">
                         <i class="fas fa-graduation-cap"></i>
@@ -531,17 +498,18 @@
             <div class="contact-container">
 
                 <div class="contact-left">
-                    <div class="box-cont box-a slide-up">
+
+                    <div class="box-cont box-a">
                         <span><i class="fa-solid fa-phone"></i> Appelez-moi</span>
                         <p>06 35 22 32 57</p>
                     </div>
     
-                    <div class="box-cont box-b slide-up">
+                    <div class="box-cont box-b">
                         <span><i class="fa-solid fa-envelope"></i> Email</span>
                         <p>franckick2@gmail.com</p>
                     </div>
     
-                    <div class="box-cont box-c slide-up">
+                    <div class="box-cont box-c">
                         <span><i class="fa-solid fa-location-dot"></i> Lieu</span>
                         <p>1505 Route de la forêt <br>
                         24300 Savignac de Nontron</p>
@@ -564,7 +532,7 @@
     
 
 
-        <footer>
+        <footer class="footer">
 
             <div class="footer-content">
 
@@ -598,7 +566,6 @@
                 <p>&copy; Franck Chapelon - All right reserved</p>
             </div>
         </footer>
-    </main>
      
 
 
@@ -631,6 +598,15 @@
         once: true,
       });
     </script>
+
+
+
+
+        <!-- ===== Typing start =====-->
+
+        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+        <!-- ===== Typing end =====-->
 
 
 
