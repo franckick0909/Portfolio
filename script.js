@@ -223,3 +223,17 @@ $(".git .bar").circleProgress({
 $(".pc .bar").circleProgress({
   value: 0.97,
 });
+
+
+
+/*====  typing ====*/
+
+
+
+let typed = new Typed('.typing',{
+  strings: [' Développeur Web', 'Front-End', 'Freelance'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 2000,
+  loop: true
+})
