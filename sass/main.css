@@ -95,9 +95,9 @@ section {
 
      */
 :root {
-  --bg-color3: #000;
-  --font-color1: #050401;
-  --font-color2: #303036;
+  --bg-color3: #555;
+  --font-color1: #111;
+  --font-color2: #333;
   --font-color3: #FC5130;
   --font-color5: #FFFAFF;
   --font-color6: #30BCED;
@@ -841,6 +841,10 @@ header .nav-left a.active i {
     left: 0;
     background: rgba(0, 0, 0, 0.4);
 }*/
+.home {
+  background: var(--font-color2);
+}
+
 .home .content {
   display: flex;
   flex-wrap: wrap;
